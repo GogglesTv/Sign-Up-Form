@@ -1,0 +1,16 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+}
+
+section.left {
+  width: 35%;
+}
+
+form {
+  width: 200px;
+  padding: 20px;
+}
