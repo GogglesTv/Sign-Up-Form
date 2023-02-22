@@ -40,29 +40,51 @@
           <div class="section1">
             <div class="fname">
               <label for="fname">First Name</label>
-              <input type="text" id="fname" name="fname" placeholder="Jalen" />
+              <input
+                type="text"
+                id="fname"
+                name="fname"
+                placeholder="Jalen"
+                minlength="2"
+                pattern="[a-zA-Z][a-zA-Z ]+"
+              />
             </div>
 
             <div class="lname">
               <label for="lname">Last Name</label>
-              <input type="text" id="lname" name="lname" placeholder="Moore" />
+              <input
+                type="text"
+                id="lname"
+                name="lname"
+                placeholder="Moore"
+                minlength="1"
+                pattern="[a-zA-Z][a-zA-Z ]+"
+              />
             </div>
           </div>
 
           <div class="section2">
             <div class="email">
               <label for="email">Email</label>
-              <input type="email" id="email" name="email" />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="me@example.com"
+                pattern="[/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.]"
+              />
             </div>
 
             <div class="phone">
               <label for="phone">Phone Number</label>
               <input
-                type="number"
+                type="text"
                 id="phone"
                 name="phone"
                 minlength="10"
                 maxlength="10"
+                placeholder="xxx-xxx-xxxx"
+                pattern="[^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$]"
               />
             </div>
           </div>
@@ -70,11 +92,22 @@
           <div class="section3">
             <div class="password">
               <label for="password">Password</label>
-              <input type="password" id="password" name="password" />
+              <input
+                type="password"
+                id="password"
+                name="password"
+                minlength="8"
+                pattern="[^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[*.!@$%^&(){}[]:;<>,.?/~_+-=|\]).{8,32}$]"
+              />
             </div>
             <div class="confirm-password">
               <label for="password">Confirm Password</label>
-              <input type="password" id="password" name="password" />
+              <input
+                type="password"
+                id="password"
+                name="password"
+                pattern="[^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[*.!@$%^&(){}[]:;<>,.?/~_+-=|\]).{8,32}$]"
+              />
             </div>
           </div>
         </form>
