@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
@@ -11,6 +13,30 @@ section.left {
 }
 
 form {
-  width: 200px;
+  width: 100%;
   padding: 20px;
+  box-shadow: 0px 10px 10px 0px rgba(128, 128, 128, 0.431);
+}
+
+label,
+input,
+button {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+fieldset > div {
+  display: flex;
+}
+
+button {
+  width: 20%;
+  padding: 8px;
+}
+
+.section1,
+.section2,
+.section3 {
+  display: flex;
 }
