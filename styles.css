@@ -71,10 +71,10 @@ a {
   text-decoration: underline;
 }
 
-.logo-content > .description {
-  margin-top: 5rem;
-  width: 90%;
-  font-weight: 800;
+section.right > .description {
+  margin-top: 6.5rem;
+  width: 85%;
+  font-weight: 900;
   margin-left: 20px;
 }
 
@@ -126,7 +126,9 @@ fieldset > div {
 }
 
 label {
-  font-size: 10px;
+  font-size: 8px;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
   color: rgb(43, 42, 42);
   text-transform: uppercase;
 }
@@ -137,9 +139,9 @@ label {
 }
 
 button {
-  width: 35%;
+  width: 30%;
   padding: 8px;
-  background-color: rgb(2, 98, 2);
+  background-color: rgb(79, 116, 21);
   color: white;
   border: 1px solid white;
   border-radius: 5px;
@@ -148,9 +150,10 @@ button {
 
 div.submit-form > p {
   margin-top: 25px;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 p > span {
-  color: rgb(25, 86, 25);
+  color: rgb(79, 116, 21);
+  font-weight: 900;
 }
