@@ -75,7 +75,7 @@ section.right > .description {
   margin-top: 6.5rem;
   width: 85%;
   font-weight: 900;
-  margin-left: 20px;
+  margin-left: 30px;
 }
 
 .description > p:nth-child(3) {
@@ -86,6 +86,7 @@ section.right > .description {
 form {
   width: 100%;
   padding: 20px;
+  padding-left: 30px;
   box-shadow: 0px 1px 10px 0px rgba(128, 128, 128, 0.431);
 }
 
@@ -133,8 +134,20 @@ label {
   text-transform: uppercase;
 }
 
+input {
+  padding: 3px;
+}
+
+input[type="email"]:invalid,
+input[type="text"]:invalid,
+input[type="number"]:invalid,
+input[type="password"]:invalid {
+  border: 1px solid red;
+}
+
 .submit-form {
   padding: 20px;
+  padding-left: 30px;
   margin-top: 10px;
 }
 
