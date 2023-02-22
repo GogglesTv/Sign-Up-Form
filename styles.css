@@ -21,6 +21,9 @@ section.left {
 
 .description {
   margin-top: 5rem;
+  width: 90%;
+  font-weight: 800;
+  margin-left: 20px;
 }
 
 .description > p:nth-child(3) {
@@ -34,16 +37,6 @@ form {
   box-shadow: 0px 1px 10px 0px rgba(128, 128, 128, 0.431);
 }
 
-legend {
-  margin-top: -5px;
-  margin-bottom: 10px;
-}
-
-.submit-form {
-  padding: 20px;
-  margin-top: 10px;
-}
-
 label,
 input,
 button {
@@ -52,13 +45,14 @@ button {
   width: 100%;
 }
 
-fieldset > div {
-  display: flex;
+legend {
+  margin-top: -5px;
+  margin-bottom: 10px;
+  font-weight: 800;
 }
 
-button {
-  width: 35%;
-  padding: 8px;
+fieldset > div {
+  display: flex;
 }
 
 .section1,
@@ -71,4 +65,40 @@ button {
 .section2 > div:nth-child(2),
 .section3 > div:nth-child(2) {
   margin-left: 3rem;
+}
+
+.section1,
+.section2,
+.section3 {
+  margin-bottom: 10px;
+}
+
+label {
+  font-size: 10px;
+  color: rgb(43, 42, 42);
+  text-transform: uppercase;
+}
+
+.submit-form {
+  padding: 20px;
+  margin-top: 10px;
+}
+
+button {
+  width: 35%;
+  padding: 8px;
+  background-color: rgb(2, 98, 2);
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  font-weight: 800;
+}
+
+div.submit-form > p {
+  margin-top: 25px;
+  font-size: 14px;
+}
+
+p > span {
+  color: rgb(25, 86, 25);
 }
