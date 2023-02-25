@@ -99,13 +99,14 @@
                 minlength="8"
                 pattern="[^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[*.!@$%^&(){}[]:;<>,.?/~_+-=|\]).{8,32}$]"
               />
+              <span class="matching-passwords" id="hide"></span>
             </div>
             <div class="confirm-password">
-              <label for="password">Confirm Password</label>
+              <label for="confirm-password">Confirm Password</label>
               <input
                 type="password"
-                id="password"
-                name="password"
+                id="confirmation"
+                name="confirmation"
                 pattern="[^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[*.!@$%^&(){}[]:;<>,.?/~_+-=|\]).{8,32}$]"
               />
             </div>
@@ -118,5 +119,6 @@
       </div>
     </section>
     <div class="block2"></div>
+    <script src="script.js"></script>
   </body>
 </html>
