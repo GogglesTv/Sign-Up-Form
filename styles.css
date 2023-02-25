@@ -84,6 +84,7 @@ section.right > .description {
 }
 
 form {
+  height: 205px;
   width: 100%;
   padding: 20px;
   padding-left: 30px;
@@ -121,9 +122,8 @@ fieldset > div {
 }
 
 .section1,
-.section2,
-.section3 {
-  margin-bottom: 10px;
+.section2 {
+  margin-bottom: 15px;
 }
 
 label {
@@ -136,13 +136,30 @@ label {
 
 input {
   padding: 3px;
+  width: 175px;
+}
+
+input:focus {
+  box-shadow: 0.5px 2px 5px rgba(128, 128, 128, 0.431);
 }
 
 input[type="email"]:invalid,
 input[type="text"]:invalid,
 input[type="number"]:invalid,
 input[type="password"]:invalid {
-  border: 1px solid red;
+  border: 1px solid rgb(212, 12, 12);
+}
+
+input[type="password"] + span.matching-passwords::after {
+  content: "* Passwords do not match";
+  color: rgb(212, 12, 12);
+  font-size: 8px;
+  position: relative;
+  top: -5px;
+}
+
+#hide {
+  display: none;
 }
 
 .submit-form {
@@ -154,7 +171,7 @@ input[type="password"]:invalid {
 button {
   width: 30%;
   padding: 8px;
-  background-color: rgb(79, 116, 21);
+  background-color: #596d48;
   color: white;
   border: 1px solid white;
   border-radius: 5px;
@@ -167,6 +184,6 @@ div.submit-form > p {
 }
 
 p > span {
-  color: rgb(79, 116, 21);
+  color: #596d48;
   font-weight: 900;
 }
